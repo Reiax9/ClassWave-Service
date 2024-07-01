@@ -1,0 +1,218 @@
+*{
+  margin:0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+html {
+  min-height: 100%;/* fill the screen height to allow vertical alignement */
+  display: grid; /* display:flex works too since body is the only grid cell */
+}
+
+body {
+  margin: auto;
+  background-color: rgb(204, 243, 255);
+
+  height: 100vh;
+  width: 100vw;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#wave-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+
+#iconoEmpresa {
+  margin-top: 0.5em;
+  width: 14em;
+}
+
+#container-form{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1em;
+  width: 15em;
+  height: 22em;
+  border: solid 1px rgb(255, 255, 255);
+  border-radius: 0.6em;
+  box-shadow: 0 4px 16px 0 rgba(0, 208, 255, 1), 0 6px 20px 0 rgba(0, 208, 255, 0.2);
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  background: url('../img/white.png');
+  /* backdrop-filter: blur(5px); */
+}
+
+
+#container-form h1{
+  flex: 1;
+}
+
+#container-form form{
+  flex: 4;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 1.2em;
+  margin-bottom: 0.4em;
+  justify-content: center;
+  color: aliceblue;
+}
+
+.logoInput {
+  position: relative;
+}
+
+#logoProfile {
+  font-size: 1.4em;
+  max-height: 1.5em;
+  max-width: 1.5em;
+  position: absolute;
+  top: 0.1em;
+  right: 0.55em;
+}
+
+input {
+  flex: 1;
+
+  margin: 0.2em 0.25em;
+  padding-left: 0.5em;
+  padding-right: 2.5em;
+  
+  min-height: 2.5em;
+
+  border-radius: 5em;
+}
+
+span {
+  color: red;
+  font-size: 0.8em;
+}
+
+
+.passuser {
+  width: auto;
+  margin-top: 0.2em;
+}
+
+.passuser:hover {
+  border: solid 2px #3498db;
+}
+
+
+#botonLogin {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  font-size: 1em;
+  padding: 0.5em 1em;
+
+  width: 80%;
+
+  color: #00ddff;
+  border: solid 1px #00ddff;
+  border-radius: 0.4em;
+  background-color: #212F3D;
+}
+
+#botonLogin:hover {
+  color: aliceblue;
+  background-color: #00ddff;
+}
+
+#mainContainDocker {
+  width: 50%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.docker{
+  min-width: 11em;
+  margin: 1em;
+  padding: 1em;
+  border: solid 1px rgb(255, 255, 255);
+  border-radius: 0.6em;
+  box-shadow: 0 4px 16px 0 rgba(0, 208, 255, 1), 0 6px 20px 0 rgba(0, 208, 255, 0.2);
+  background: url('../img/white.png');
+}
+
+.docker a{
+  text-decoration: none;
+  color: white;
+  margin-left: 10px; /* Ajusta el margen izquierdo para separar la imagen del texto */
+}
+
+.docker img{
+  width: 80px; /* Tamaño considerable para la imagen */
+  height: auto; /* Para mantener la proporción */
+}
+
+.docker:hover {
+  background-color: #f0f0f0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Loading Screen */
+
+.loader {
+  position: fixed;
+  left: 45%;
+  top: 38%;
+  transform: translate(-50%, -50%);
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+  z-index: 1001;
+}
+
+@media screen and (max-width: 600px) {
+  .loader {
+    left: 33%;
+  }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.hidden {
+  display: none;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.501);
+  backdrop-filter: blur(5px);
+  z-index: 1000;
+  display: none;
+}
