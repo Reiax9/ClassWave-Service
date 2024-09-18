@@ -18,7 +18,7 @@ Este repositorio contiene:
 ## Repositorios
 
 El proyecto ClassWave Management está dividido en dos repositorios:
-- [**Repositorio de la página web**](https://github.com/BRVallmi/Proyecto-Final-Web): Código fuente de la página web donde explicamos el servicio.
+- [**Repositorio de la página web**](https://github.com/Reiax9/ClassWave-Service/): Código fuente de la página web donde explicamos el servicio.
 - **Este repositorio**: Código fuente del sistema de login, panel de control y otras funcionalidades internas.
 
 ## Instalación
