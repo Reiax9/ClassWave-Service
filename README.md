@@ -26,5 +26,5 @@ El proyecto ClassWave Management está dividido en dos repositorios:
 Para clonar y ejecutar este proyecto localmente:
 
 ```bash
-git clone https://github.com/BRVallmi/Proyecto-Final-Web
+git clone https://github.com/Reiax9/ClassWave-Service/
 cd ClassWave-Management-Login
